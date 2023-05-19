@@ -2,7 +2,7 @@
 import CartWidget from "../CartWidget/CartWidget";
 
 import logo from "./mahalo.jpg";
-import { Outlet, Link, useNavigate, NavLink } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 import styles from "./Navbar.module.css";
 

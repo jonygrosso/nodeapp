@@ -1,0 +1,10 @@
+.containerImage{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.containerImage > img{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+}

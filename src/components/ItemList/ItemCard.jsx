@@ -13,32 +13,32 @@ import { Link } from "react-router-dom";
 
 const ItemCard = ({ item }) => {
   return (
-    <Card sx={{ width: 350, height: 650, margin: 3 }}>
-      <CardMedia
-        sx={{
-          width: 220,
-          height: 450,
-          backgroundSize: "contain",
-          textAlign: "center",
-        }}
-        image={item.img}
-        title={item.title}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+    <Card sx={{ width: 345, height: 350 }}>
+      <CardMedia sx={{ height: 140 }} image={item.img} title="green iguana" />
+      <CardContent sx={{ height: 150 }}>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          textAlign={"center"}
+        >
           {item.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="h6" color="text.secondary" textAlign={"center"}>
           {item.description}
         </Typography>
-        <Typography variant="body2" color="primary">
-          USD {item.price}
+        <Typography variant="subtitle1" textAlign={"center"}>
+          ${item.price}.-
         </Typography>
       </CardContent>
-      <CardActions style={{ height: 80 }}>
+      <CardActions style={{ display: "flex", justifyContent: "center" }}>
         <Link to={`/itemDetail/${item.id}`}>
-          <Button variant="outlined" size="small" style={{ padding: 1 }}>
-            Mas info
+          <Button
+            variant="contained"
+            size="small"
+            sx={{ textTransform: "none" }}
+          >
+            Ver detalle
           </Button>
         </Link>
       </CardActions>
